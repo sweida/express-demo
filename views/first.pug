@@ -1,0 +1,12 @@
+doctype html
+html
+    head
+        title= "Hello Pug"
+    body
+        p.greetings#people Hello World!
+        ul
+            each item in comments
+                li
+                    p= item.name
+                    p= item.message
+                    p= item.dateTime
